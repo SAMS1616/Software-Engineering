@@ -14,10 +14,18 @@ public class Studienberatung{
 				System.out.println("Nicht studieren");
 				System.exit(0);
 			}
-
 		}
 		else if(antwort.equalsIgnoreCase("ja")){
 			System.out.println("Bist du wissbegierig?");
+			antwort = scanner.nextLine();
+			if(antwort.equalsIgnoreCase("ja")){
+				System.out.println("Auf jeden Fall studieren");
+				System.exit(0);
+			}
+			else if(antwort.equalsIgnoreCase("nein")){
+				antwort.equalsIgnoreCase("Nicht studieren");
+				System.exit(0);
+			}
 		}
 	}
 }
