@@ -4,13 +4,19 @@ public class Studienberatung{
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Hast du Abitur?");
 		String antwort = scanner.nextLine();
-		if(antwort.equalsIgnoreCase("nein"){
+		if(antwort.equalsIgnoreCase("nein")){
 			System.out.println("Hast du Fachabitur?");
 			antwort = scanner.nextLine();
-			if(antwort.equalsIgnoreCase("ja"){
+			if(antwort.equalsIgnoreCase("ja")){
 				System.out.println("Hast du eine Berufsausbildung?");
 			}
-		else if(antwort.equalsIgnoreCase("ja"){
+			else if(antwort.equalsIgnoreCase("nein")){
+				System.out.println("Nicht studieren");
+				System.exit(0);
+			}
+
+		}
+		else if(antwort.equalsIgnoreCase("ja")){
 			System.out.println("Bist du wissbegierig?");
 		}
 	}
